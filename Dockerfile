@@ -4,6 +4,8 @@ MAINTAINER mxl
 RUN mkdir /home/keyfox
 WORKDIR /home/keyfox
 
+RUN yum install wget
+
 RUN wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.6.1.tgz 
 RUN tar -zxvf mongodb-linux-x86_64-rhel70-3.6.1.tgz
 RUN mv mongodb-linux-x86_64-rhel70-3.6.1 mongodb
