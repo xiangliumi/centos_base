@@ -2,10 +2,10 @@ FROM centos:latest
 MAINTAINER mxl
 
 ADD mongodb.repo /etc/yum.repos.d
-RUN yum update
-RUN yum install -y mongodb-org
 
-RUN yum install -y wget
+RUN yum -y update
+RUN yum -y install mongodb-org
+RUN yum -y install wget
 
 RUN mkdir /home/keyfox
 WORKDIR /home/keyfox
