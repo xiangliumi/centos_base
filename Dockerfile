@@ -1,7 +1,9 @@
 FROM centos:latest 
 MAINTAINER mxl
 
-ADD mongodb.repo /etc/yum.repos.d
+COPY mongodb.repo /etc/yum.repos.d
+
+ADD LanProbe.tar.gz /home
 
 RUN yum -y update
 RUN yum -y install mongodb-org
