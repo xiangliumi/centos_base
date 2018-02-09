@@ -16,5 +16,7 @@ RUN wget http://mirror.bit.edu.cn/apache/tomcat/tomcat-7/v7.0.84/bin/apache-tomc
 RUN tar xvf apache-tomcat-7.0.84.tar.gz
 ENV CATALINA_HOME /home/keyfox/apache-tomcat-7.0.84
 
+RUN yum -y install java
+
 EXPOSE 8080
 CMD [ "/home/keyfox/apache-tomcat-7.0.84/bin/catalina.sh", "run" ]
