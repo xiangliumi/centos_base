@@ -14,4 +14,4 @@ RUN tar xvf apache-tomcat-7.0.84.tar.gz
 ENV CATALINA_HOME /home/keyfox/apache-tomcat-7.0.84
 
 EXPOSE 8080
-CMD [ "/home/keyfox/apache-tomcat-7.0.62/bin/catalina.sh", "run" ]
+CMD [ "/home/keyfox/apache-tomcat-7.0.84/bin/catalina.sh", "run" ]
